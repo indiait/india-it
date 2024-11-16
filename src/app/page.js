@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Solutions from "./solutions/page";
+import AboutUs from "./about/page";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       </div>
       </div>
       <Solutions />
+      <AboutUs />
     </div>
   );
 }

@@ -16,7 +16,8 @@ module.exports = {
         dark: "#585252",
       },
       padding: {
-        section: "50px 20px 40px 20px"
+        section: "50px 20px 40px 20px",
+        aboutUs: "0px 20px",
       }
     },
   },
