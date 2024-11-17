@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 
 export default function Footer() {
@@ -6,6 +7,12 @@ export default function Footer() {
             className="w-full h-auto bg-slate-900 p-section leading-3 relative"
         >
             {/* Footer logo Image */}
+            <Image 
+                src="/India-Isologo-teal-crop-content.png"
+                width={24}
+                height={48}
+                alt="logo-footer"
+            />
             <p
                 className="text-gold text-xs mt-1 leading-8"
             >

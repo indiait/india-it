@@ -2,29 +2,46 @@ import { aboutUs } from "@/app/constants/data";
 import Image from "next/image";
 
 export default function AboutUs() {
-  return (
-    <div className="flex flex-col w-full h-[450px]">
-        <Image 
-            src="/teamwork.jpg" 
-            width={375}
-            height={450}
-            alt="teamwork"
-            style={{ 
+    return (
+        <>
+        <div className="flex flex-col w-full h-[450px] mb-3">
+            <Image
+                src="/teamwork.jpg"
+                width={375}
+                height={450}
+                alt="teamwork"
+                style={{
                     objectFit: "cover",
                     zIndex: -1,
-                  }}
+                }}
+
+            />
+            <div
+                className="w-fit self-end py-[2rem] px-[1rem] rounded-md  relative opacity-75 bottom-[20px] text-slate-900"
+                style={{
+                    zIndex: 9,
+                    background: "linear-gradient(white, #d1d1d1)",
+                }}
+            >
+                <h1 className="text-[36px] pb-4">
+                    {/* {aboutUs.title.toUpperCase()} */}
+                    <strong>SOMOS</strong> INDIA IT
+                </h1>
+                <p className="text-[16px] leading-5">
+                    {aboutUs.description}
+                </p>
+                
+            </div>
             
-        />
-        <div 
-            className="w-fit bg-white self-end py-[2rem] px-[1rem] rounded-md  relative opacity-75 bottom-[20px]"
-            style={{ zIndex: 9}}
-        >
-        <h1 className="text-[36px] pb-4">
-            {aboutUs.title.toUpperCase()}
-        </h1>
-        <p className="text-[16px] leading-5">
-            {aboutUs.description}
-        </p>
         </div>
-    </div>);
+        
+        <div
+        className="w-full h-2 absolute"    
+        style={{
+            background: "linear-gradient(to left,#37abb4,#d49e4a)",
+            zIndex: 19,
+        }}
+    ></div>
+    </>
+    );
 }

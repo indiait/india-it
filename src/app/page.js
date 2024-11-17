@@ -5,22 +5,46 @@ import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div 
+    <div
       className="h-screen w-full"
     >
-      <div className="h-3/4 relative"
-        style={{ zIndex: -1}}
+      <div className="h-3/4 w-[115%] relative"
+        style={{ zIndex: -1 }}
       >
-        <Image src={"/conny-schneider-xuTJZ7uD7PI-unsplash.jpg"}
-          // width={375}
-          // height={500}
+        <Image src={"/bg-luxury-gold.jpg"}
           alt="bgHeroImage"
           fill
-          style={{ objectFit: "cover", filter: "brightness(65%)" }}
+          style={{ 
+            objectFit: "cover", 
+            filter: "brightness(100%)" 
+          }}
         />
-        <div className="flex h-full w-full items-center text-white absolute ">
-        <h2 className="text-[38px] mx-4">Soluciones digitales para optimizar <br></br> tu negocio</h2>
-      </div>
+        
+        <div className="flex flex-col h-full w-full justify-center text-white absolute ">
+        {/* <Image 
+                src="/India-Isologo-teal-crop-content.png"
+                width={70}
+                height={140}
+                alt="logo-footer"
+                style={{ 
+                  marginLeft: 20,
+                  marginBottom: 20,
+                }}
+            /> */}
+          <h2 className="text-[38px] mx-4 leading-[44px]">
+            <span className="text-[36px]">Soluciones digitales</span>
+            <br></br>para optimizar  
+            <br></br>tu negocio</h2>
+          <div 
+            className="mx-4 w-fit text-[1rem] px-[1.6rem] py-[0.5rem] text-dark rounded-md mt-4 font-semibold"
+            style={{
+              background: "linear-gradient(90deg, #d1d1d1, #fff)"
+            }}
+          >
+            <a>Qué hacemos</a>
+          </div>
+        </div>
+
       </div>
       <Solutions />
       <AboutUs />
