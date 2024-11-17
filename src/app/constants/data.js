@@ -2,7 +2,7 @@
 export const aboutUs = {
     id: 1,
     title: "Somos India IT",
-    description: "Creemos en el poder de la colaboración, la calidad y la mejora continua para construir un futuro más eficiente y conectado. Nuestra misión es convertirnos en socios etratégicos de nuestros clientes, aportando valor a cada proyecto y ofreciendo un servicios personalizado que se adapte a sus necesidades y objetivos."
+    description: "Nuestra misión es convertirnos en socios etratégicos de nuestros clientes, aportando valor a cada proyecto y ofreciendo un servicios personalizado que se adapte a sus necesidades y objetivos."
 }
 
 

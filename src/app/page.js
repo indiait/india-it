@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Solutions from "./solutions/page";
 import AboutUs from "./about/page";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       </div>
       <Solutions />
       <AboutUs />
+      <Footer />
     </div>
   );
 }
