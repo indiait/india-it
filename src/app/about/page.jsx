@@ -4,7 +4,10 @@ import Image from "next/image";
 export default function AboutUs() {
     return (
         <>
-        <div className="flex flex-col lg:flex-row w-full h-[450px] mb-3 lg:mb-0">
+        <div 
+            className="flex flex-col lg:flex-row w-full h-[450px] mb-3 lg:mb-0"
+            id="aboutUs"
+        >
             <Image
                 src="/teamwork.jpg"
                 width={375}
@@ -18,7 +21,7 @@ export default function AboutUs() {
 
             />
             <div
-                className="w-fit lg:w-1/2 self-end py-[2rem] px-[1rem] rounded-md  relative opacity-75 bottom-[20px] text-slate-900"
+                className="w-fit lg:w-1/2 lg:h-[450px] self-end py-[2rem] px-[1rem] rounded-md  relative opacity-75 bottom-[20px] lg:bottom-0 text-slate-900"
                 style={{
                     zIndex: 9,
                     background: "linear-gradient(white, #d1d1d1)",

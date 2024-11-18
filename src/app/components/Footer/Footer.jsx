@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <div
+            id="contactMe"
             className="w-full h-auto md:flex md:flex bg-slate-900 p-section leading-3 relative"
         >
             {/* Footer logo Image */}

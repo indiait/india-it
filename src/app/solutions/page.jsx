@@ -3,7 +3,10 @@ import  { SolutionsData } from "../constants/data";
 
 export default function Solutions() {
     return (
-        <div className="w-full h-fit text-dark">
+        <div 
+         className="w-full h-fit text-dark"
+         id="solutions"
+         >
 
             {/* Solutions */}
             <section className="flex flex-wrap lg:justify-center lg:flex-row p-section ">
