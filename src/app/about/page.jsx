@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutUs() {
     return (
         <>
-        <div className="flex flex-col w-full h-[450px] mb-3">
+        <div className="flex flex-col lg:flex-row w-full h-[450px] mb-3 lg:mb-0">
             <Image
                 src="/teamwork.jpg"
                 width={375}
@@ -14,10 +14,11 @@ export default function AboutUs() {
                     objectFit: "cover",
                     zIndex: -1,
                 }}
+                className="w-[428px] h-[450px] md:w-full  md:h-[309px] lg:w-1/2 lg:h-auto lg:rounded-md"
 
             />
             <div
-                className="w-fit self-end py-[2rem] px-[1rem] rounded-md  relative opacity-75 bottom-[20px] text-slate-900"
+                className="w-fit lg:w-1/2 self-end py-[2rem] px-[1rem] rounded-md  relative opacity-75 bottom-[20px] text-slate-900"
                 style={{
                     zIndex: 9,
                     background: "linear-gradient(white, #d1d1d1)",
@@ -27,7 +28,7 @@ export default function AboutUs() {
                     {/* {aboutUs.title.toUpperCase()} */}
                     <strong>SOMOS</strong> INDIA IT
                 </h1>
-                <p className="text-[16px] leading-5">
+                <p className="text-[16px] lg:text-[24px] leading-5 lg:leading-10">
                     {aboutUs.description}
                 </p>
                 

@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        md: { min: "768px"},
+        lg: { min: "992px" }
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

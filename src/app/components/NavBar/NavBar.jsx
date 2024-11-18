@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function NavBar() {
   return (
     <div className="z-50">
-    <nav className="w-full h-[4.2rem] lg:h-[7.2rem] bg-slate-900 absolute">
+    <nav className="w-full h-[4.2rem] bg-slate-900 absolute">
         <div className="my-[0.9rem] mx-[1.5rem]">
             {/* <h1 className="text-gold">India IT</h1> */}
             <Image 
