@@ -20,7 +20,7 @@ export default function Home() {
     <div
       className="h-screen w-full"
     >
-      <div className="h-3/4 w-[120%] relative"
+      <div className="h-3/4 w-[100%] relative"
         style={{ zIndex: 0 }}
       >
         <Image src={"/bg-luxury-gold.jpg"}
@@ -39,7 +39,7 @@ export default function Home() {
               Soluciones digitales
             </span>
             <br></br>para optimizar
-            <br className="lg:hidden md:hidden"></br>tu negocio</h2>
+            <br className="lg:hidden md:hidden"></br> tu negocio</h2>
 
             <Link href="#solutions" className="hover:text-dark cursor-pointer" >
           <div
