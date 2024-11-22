@@ -25,14 +25,20 @@ export default function Footer() {
             <div className="w-full h-fit text-sm text-gold ">
                 <p className="font-semibold">Contáctanos</p>
                 <p>Escríbenos</p>
-                <a href="#">nombre@ejemplo.com</a>
+                <a href="mailto:india.solutions@outlook.com">india.solutions@outlook.com</a>
             </div>
 
             <div className="w-full h-fit text-sm text-gold mt-[2rem] md:mt-0">
                 <p className="font-semibold">Síguenos</p>
                 <div className="flex flex-row md:flex-col w-3/4 justify-between">
-                    <a href="#">Instagram</a>
-                    <a href="#">LinkedIn</a>
+                    <a 
+                        href="#"
+                        className="text-dark"
+                        style={{
+                            pointerEvents: "none",
+                        }}
+                    >Instagram</a>
+                    <a href="https://www.linkedin.com/company/indiait/">LinkedIn</a>
                 </div>
 
             </div>
