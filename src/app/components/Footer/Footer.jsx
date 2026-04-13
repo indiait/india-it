@@ -19,7 +19,7 @@ export default function Footer() {
                 <p
                     className="text-gold text-xs mt-1 leading-8"
                 >
-                    Todos los derechos reservados 2025
+                    Todos los derechos reservados 2026
                 </p>
             </div>
             <div className="w-full h-fit text-sm text-gold ">
