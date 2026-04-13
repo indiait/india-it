@@ -26,3 +26,46 @@ export const SolutionsData = [
         description: "Nos enfocamos en identificar a los mejores profesionales que se alineen con la cultura de tu organización" 
     }
 ]
+
+// Logos para el carrusel infinito
+// Nota: Debes agregar las imágenes de los logos en la carpeta /public/logos/
+export const CompanyLogos = [
+    {
+        id: 1,
+        src: "/logos/biomagna-logo-gray.png",
+        alt: "Biomagna",
+        href: ""
+    },
+    {
+        id: 2,
+        src: "/logos/welo-logo-gray.png",
+        alt: "Welo",
+        href: "https://welo.com.ar"
+    },
+    {
+        id: 3,
+        src: "/logos/quimicuy-logo-gray.png",
+        alt: "Quimicuy",
+        href: "https://quimicuy.com.ar"
+    },
+    /* {
+        id: 4,
+        src: "/logos/rockwell-automation.png",
+        alt: "Rockwell Automation"
+    },
+    {
+        id: 5,
+        src: "/logos/live-nation.png",
+        alt: "Live Nation"
+    },
+    {
+        id: 6,
+        src: "/logos/fifa.png",
+        alt: "FIFA"
+    },
+    {
+        id: 7,
+        src: "/logos/f1.png",
+        alt: "Formula 1"
+    } */
+]

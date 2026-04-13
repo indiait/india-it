@@ -21,10 +21,10 @@ export default function AboutUs() {
 
             />
             <div
-                className="w-fit lg:w-fit lg:h-[450px] self-end py-[2rem] px-[1rem] rounded-md  relative opacity-75 bottom-[37px] md:bottom-[20px] lg:bottom-0 text-slate-900"
+                className="w-fit lg:w-fit lg:h-[450px] self-end py-[2rem] px-[1rem] rounded-md relative bottom-[37px] md:bottom-[20px] lg:bottom-0 text-slate-900"
                 style={{
                     zIndex: 9,
-                    background: "linear-gradient(white, #d1d1d1)",
+                    background: "linear-gradient(rgba(255,255,255,0.75), rgba(209,209,209,0.75))",
                 }}
             >
                 <h1 className="text-[36px] pb-4">

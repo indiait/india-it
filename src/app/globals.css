@@ -19,3 +19,22 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+/* Animación para el carrusel infinito de logos */
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-carousel {
+  animation: logoScroll 30s linear infinite;
+  display: flex;
+}
+
+.logo-carousel:hover {
+  animation-play-state: paused;
+}

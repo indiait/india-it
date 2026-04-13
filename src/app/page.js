@@ -4,6 +4,8 @@ import Image from "next/image";
 import Solutions from "./solutions/page";
 import AboutUs from "./about/page";
 import Footer from "./components/Footer/Footer";
+import LogoCarousel from "./components/LogoCarousel/LogoCarousel";
+import { CompanyLogos } from "./constants/data";
 import { useEffect } from "react";
 import Link from "next/link";
 
@@ -59,6 +61,7 @@ export default function Home() {
       </div>
       <Solutions />
       <AboutUs />
+      <LogoCarousel logos={CompanyLogos} />
       <Footer />
     </div>
   );
