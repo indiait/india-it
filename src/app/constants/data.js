@@ -34,7 +34,7 @@ export const CompanyLogos = [
         id: 1,
         src: "/logos/biomagna-logo-gray.png",
         alt: "Biomagna",
-        href: ""
+        href: "https://biomagnaortopedia.com"
     },
     {
         id: 2,

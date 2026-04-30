@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function LogoCarousel({ logos = [], title = "Empresas que eligieron nuestras soluciones" }) {
+export default function LogoCarousel({ logos = [], title = "Empresas que nos eligieron" }) {
   // Si no hay logos, no renderizamos el componente
   if (!logos || logos.length === 0) {
     return null;
@@ -12,11 +12,11 @@ export default function LogoCarousel({ logos = [], title = "Empresas que eligier
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <div className="w-full bg-gray-50 py-12 md:py-16">
+    <div className="w-full bg-gray-50 py-8 md:py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Encabezado */}
         {title && (
-          <h2 className="text-[36px] pb-4 text-center text-slate-900">
+          <h2 className="pb-8 text-center text-[24px] leading-tight text-slate-900 md:text-[36px]">
             <strong>{title}</strong>
           </h2>
         )}
