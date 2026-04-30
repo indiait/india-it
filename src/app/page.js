@@ -5,6 +5,7 @@ import Solutions from "./solutions/page";
 import AboutUs from "./about/page";
 import Footer from "./components/Footer/Footer";
 import LogoCarousel from "./components/LogoCarousel/LogoCarousel";
+import TeamSection from "./components/TeamSection/TeamSection";
 import { CompanyLogos } from "./constants/data";
 import { useEffect } from "react";
 import Link from "next/link";
@@ -61,6 +62,7 @@ export default function Home() {
       </div>
       <Solutions />
       <AboutUs />
+      <TeamSection />
       <LogoCarousel logos={CompanyLogos} />
       <Footer />
     </div>
