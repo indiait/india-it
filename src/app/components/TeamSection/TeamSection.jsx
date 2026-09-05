@@ -18,7 +18,7 @@ function LinkedInIcon() {
 function TeamMemberCard({ member }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-md bg-white shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
-      <div className="relative h-[156px] w-full bg-neutral-900 md:h-[320px]">
+      <div className="relative h-[156px] w-full bg-neutral-900 md:h-[17rem]">
         {member.image ? (
           <Image
             src={member.image}
@@ -68,7 +68,7 @@ export default function TeamSection() {
           Nuestro equipo
         </h2>
 
-        <div className="grid grid-cols-2 gap-3 md:gap-5 xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
           {teamMembers.map((member) => (
             <TeamMemberCard key={member.id} member={member} />
           ))}

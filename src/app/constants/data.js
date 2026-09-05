@@ -27,8 +27,7 @@ export const SolutionsData = [
     }
 ]
 
-// Logos para el carrusel infinito
-// Nota: Debes agregar las imágenes de los logos en la carpeta /public/logos/
+// Logos de clientes con tamaños ajustados a sus proporciones
 export const CompanyLogos = [
     {
         id: 1,
@@ -40,12 +39,16 @@ export const CompanyLogos = [
         id: 2,
         src: "/logos/welo-logo-gray.png",
         alt: "Welo",
+        sizeClassName: "max-w-[56px] md:max-w-[112px]",
+        sizes: "(min-width: 768px) 112px, 56px",
         href: "https://welo.com.ar"
     },
     {
         id: 3,
         src: "/logos/quimicuy-logo-gray.png",
         alt: "Quimicuy",
+        sizeClassName: "max-w-[104px] md:max-w-[220px]",
+        sizes: "(min-width: 768px) 220px, 104px",
         href: "https://quimicuy.com.ar"
     },
     /* {

@@ -1,6 +1,8 @@
 import florImage from "../../../public/team/Flor.jpeg";
 import juanImage from "../../../public/team/Juan.jpeg";
 import santiImage from "../../../public/team/Santi.jpeg";
+import joseImage from "../../../public/team/Jose.jpeg";   
+
 
 export const teamMembers = [
   {
@@ -15,7 +17,7 @@ export const teamMembers = [
     id: 2,
     name: "Jose Luis Barrera",
     role: "Desarrollador de aplicaciones web y productos digitales (Full Stack)",
-    image: "",
+    image: joseImage,
     initials: "JB",
     linkedin: "https://www.linkedin.com/in/jose-luis-barrera-27968a229/",
   },

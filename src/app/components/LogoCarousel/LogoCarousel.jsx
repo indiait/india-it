@@ -1,70 +1,53 @@
-"use client"
-
 import Image from "next/image";
 
 export default function LogoCarousel({ logos = [], title = "Empresas que nos eligieron" }) {
-  // Si no hay logos, no renderizamos el componente
   if (!logos || logos.length === 0) {
     return null;
   }
 
-  // Duplicamos los logos para crear el efecto infinito sin cortes
-  const duplicatedLogos = [...logos, ...logos];
-
   return (
-    <div className="w-full bg-gray-50 py-8 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        {/* Encabezado */}
+    <section className="w-full bg-gray-50 py-8 md:py-16">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
         {title && (
-          <h2 className="pb-8 text-center text-[24px] leading-tight text-slate-900 md:text-[36px]">
+          <h2 className="pb-8 text-center text-[24px] leading-tight text-slate-900 md:pb-10 md:text-[36px]">
             <strong>{title}</strong>
           </h2>
         )}
 
-        {/* Contenedor del carrusel con overflow hidden */}
-        <div className="relative w-full overflow-hidden">
-          {/* Carrusel animado */}
-          <div className="flex logo-carousel">
-            {duplicatedLogos.map((logo, index) => (
-              <div
-                key={`logo-${index}`}
-                className="flex-shrink-0 mx-6 md:mx-8 lg:mx-12 flex items-center justify-center"
-                style={{ minWidth: '140px', height: '96px' }}
-              >
+        <ul className="mx-auto grid max-w-4xl grid-cols-3 items-center gap-x-4 gap-y-6 md:gap-x-12">
+          {logos.map((logo, index) => {
+            const image = (
+              <span className={`relative block h-16 w-full md:h-28 ${logo.sizeClassName || "max-w-[104px] md:max-w-[240px]"}`}>
+                <Image
+                  src={logo.src}
+                  alt={logo.alt || `Logo ${index + 1}`}
+                  fill
+                  sizes={logo.sizes || "(min-width: 768px) 240px, 104px"}
+                  className="object-contain"
+                />
+              </span>
+            );
+
+            return (
+              <li key={logo.id || logo.src} className="flex min-w-0 items-center justify-center">
                 {logo.href ? (
                   <a
                     href={logo.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Ir al sitio web de ${logo.alt || `Logo ${index + 1}`}`}
-                    className="relative w-full h-full grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                    className="flex w-full items-center justify-center rounded-md grayscale focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan"
                   >
-                    <Image
-                      src={logo.src}
-                      alt={logo.alt || `Logo ${index + 1}`}
-                      fill
-                      style={{ objectFit: "contain" }}
-                      className="filter"
-                      unoptimized
-                    />
+                    {image}
                   </a>
                 ) : (
-                  <div className="relative w-full h-full grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-                    <Image
-                      src={logo.src}
-                      alt={logo.alt || `Logo ${index + 1}`}
-                      fill
-                      style={{ objectFit: "contain" }}
-                      className="filter"
-                      unoptimized
-                    />
-                  </div>
+                  <div className="flex w-full items-center justify-center grayscale">{image}</div>
                 )}
-              </div>
-            ))}
-          </div>
-        </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
-    </div>
+    </section>
   );
 }
